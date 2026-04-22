@@ -32,7 +32,7 @@ jobs:
 
       - name: Build and Bundle (Release)
         working-directory: ./packages/desktop
-        run: dx bundle --release --package-types msi exe
+        run: dx bundle --platform desktop --release --package-types msi
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
