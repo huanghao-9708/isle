@@ -44,7 +44,7 @@ jobs:
 
       - name: Build and Bundle (Release)
         working-directory: ./packages/desktop
-        run: dx bundle --release
+        run: dx bundle --release --package-types msi exe
 
       - name: Get Version from Tag
         id: get_version
@@ -59,7 +59,8 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            packages/desktop/target/dx/Isle/release/bundle/msi/*.msi
-            packages/desktop/target/dx/Isle/release/bundle/exe/*.exe
+            target/dx/**/bundle/windows/msi/*.msi
+            target/dx/**/bundle/windows/exe/*.exe
+            target/dx/**/bundle/windows/**/*.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
