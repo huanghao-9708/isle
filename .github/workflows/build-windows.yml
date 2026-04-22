@@ -32,11 +32,13 @@ jobs:
 
       - name: Build and Bundle (Release)
         working-directory: ./packages/desktop
-        run: dx bundle --release
+        run: dx bundle --release --package-types msi exe
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: windows-bundle
-          path: ./packages/desktop/target/dx/desktop/release/bundle/
+          path: |
+            target/dx/**/bundle/windows/msi/*.msi
+            target/dx/**/bundle/windows/exe/*.exe
           if-no-files-found: warn
