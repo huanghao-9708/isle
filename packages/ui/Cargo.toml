@@ -1,0 +1,19 @@
+[package]
+name = "ui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dioxus = { workspace = true, features = ["desktop"] }
+api = { workspace = true }
+tracing = { workspace = true }
+dirs = "5.0"
+uuid = { version = "1.0", features = ["v4"] }
+tokio = { version = "1.0", features = ["full"] }
+rfd = "0.15"
+dioxus-free-icons = { version = "0.10.0", features = ["lucide", "font-awesome-solid"] }
+chrono = "0.4.44"
+
+[features]
+default = []
+desktop = ["dioxus/desktop"]

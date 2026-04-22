@@ -1,0 +1,5 @@
+/* 清空默认样式，让 Tailwind 接管 */
+body {
+    margin: 0;
+    padding: 0;
+}

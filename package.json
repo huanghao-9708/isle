@@ -1,0 +1,20 @@
+{
+  "name": "lsle_demo2",
+  "version": "1.0.0",
+  "description": "Your new workspace contains a member crate for each of the web, desktop and mobile platforms, and a `ui` crate for components that are shared between multiple platforms:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./packages/ui/assets/tailwind.css -o ./packages/desktop/assets/main.css",
+    "watch:css": "tailwindcss -i ./packages/ui/assets/tailwind.css -o ./packages/desktop/assets/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.23",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17"
+  }
+}

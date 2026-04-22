@@ -1,0 +1,20 @@
+[package]
+name = "desktop"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+winres = "0.1"
+
+[dependencies]
+dioxus = { workspace = true, features = ["desktop", "asset"] }
+ui = { workspace = true, features = ["desktop"] }
+api = { workspace = true }
+dioxus-logger = { workspace = true }
+tracing = { workspace = true }
+http = "1"
+dirs = "5"
+image = "0.24.0"
+[features]
+default = ["desktop"]
+desktop = ["dioxus/desktop"]
