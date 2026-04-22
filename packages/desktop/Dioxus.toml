@@ -3,8 +3,8 @@ name = "Isle"
 default_platform = "desktop"
 
 [bundle]
-identifier = "com.lsle.demo"
-publisher = "Lsle"
+identifier = "com.isle.demo"
+publisher = "Isle"
 icon = ["icons/icon.ico", "icons/icon.png", "assets/icon.ico", "assets/logo.png"]
 # 默认情况下 dx bundle 会寻找 icons 目录，同时也保留 assets 目录的配置
 

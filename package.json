@@ -1,5 +1,5 @@
 {
-  "name": "lsle_demo2",
+  "name": "isle",
   "version": "1.0.0",
   "description": "Your new workspace contains a member crate for each of the web, desktop and mobile platforms, and a `ui` crate for components that are shared between multiple platforms:",
   "main": "index.js",

@@ -53,7 +53,7 @@
 ### 3.1 项目目录结构
 
 ```
-lsle_demo2/
+isle/
 ├── Cargo.toml                      # Workspace 根配置
 ├── Cargo.lock                      # 依赖锁定文件
 ├── package.json                    # Node.js 配置（Tailwind CSS）
